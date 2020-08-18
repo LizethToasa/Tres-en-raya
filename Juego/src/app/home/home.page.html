@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title color="success" class="center"> Tres en raya </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding> {{actualJugador}}
+  <ion-grid class="board">
+    <ion-row center>
+      <ion-col>
+        <ion-button color="success" id="1" class="boton" (click)="placeTile('1')"></ion-button>
+      </ion-col>  
+      <ion-col>
+        <ion-button color="success" id="2" class="boton" (click)="placeTile('2')"></ion-button>
+    </ion-col>
+    <ion-col>
+        <ion-button color="success" id="4" class="boton" (click)="placeTile('4')"></ion-button>
+    </ion-col>
+</ion-row>
+<ion-row>
+    <ion-col>
+        <ion-button color="success" id="8" class="boton" (click)="placeTile('8')"></ion-button>
+    </ion-col>
+    <ion-col>
+        <ion-button color="success" id="16" class="boton" (click)="placeTile('16')"></ion-button>
+    </ion-col>
+    <ion-col>
+        <ion-button color="success" id="32" class="boton" (click)="placeTile('32')"></ion-button>
+    </ion-col>
+</ion-row>
+<ion-row>
+    <ion-col>
+        <ion-button color="success" id="64" class="boton" (click)="placeTile('64')"></ion-button>
+    </ion-col>
+    <ion-col>
+        <ion-button color="success" id="128" class="boton" (click)="placeTile('128')"></ion-button>
+    </ion-col>
+    <ion-col>
+        <ion-button color="success" id="256" class="boton" (click)="placeTile('256')"></ion-button>
+    </ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>
